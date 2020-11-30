@@ -1,6 +1,7 @@
 const request = require("supertest");
 const app = require("../app");
-const { isUuid } = require("uuidv4");
+import { validate as isUuid } from 'uuid';
+
 
 describe("Repositories", () => {
   it("should be able to create a new repository", async () => {
