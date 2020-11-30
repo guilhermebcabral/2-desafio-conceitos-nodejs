@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
-import { v4 as uuid } from 'uuid';
+const { v4: uuid, validate: isUuid } = require('uuid');
 
 const app = express();
 
